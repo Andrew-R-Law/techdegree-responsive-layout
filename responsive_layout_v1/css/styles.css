@@ -1,0 +1,145 @@
+/*Base Element Styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color:darkslategrey;
+
+}
+
+h1, h2, h3, ul, p {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*--------
+Base Layout Styles
+---------*/
+
+/*Header Styles*/
+.profile-pic {
+    display: block;
+    margin: auto;
+}
+
+.main-nav {
+    text-transform: uppercase;
+    padding: 15px 0 30px;
+    font-weight: 700;
+}
+
+.main-nav li {
+    padding: 10px 0;
+}
+
+/*Main Section Styles*/
+.portfolio {
+    padding: 60px 0 40px;
+}
+
+.projects section {
+    padding-bottom: 60px;
+}
+
+.uppercase-heading {
+    text-transform: uppercase;
+}
+.contact {
+    padding: 60px 0;
+    border-bottom:2px solid lightslategray;
+}
+
+.contact h2 {
+    font-size: 1.1rem;
+}
+
+.contact p, .contact li {
+    color: lightslategray;
+    padding: 10px 0;
+}
+
+/*Footer Styles*/
+footer ul {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.med-nav {
+    display: none;
+}
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+    header, .main-nav, .about-me, .projects {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+  
+    .main-nav li {
+        padding: 0 30px;
+    }
+
+    .about-me {
+        width: 95%;
+        margin: auto;
+    }
+ 
+    .about-item {
+        flex: 1;
+    }
+
+    .about-me p {
+        order: -1;
+        text-align: left;
+        padding-right: 10px;
+        flex: 3;
+    }
+    
+    .projects {
+        flex-wrap: wrap;
+    }
+   
+    .project {
+       padding: 0 10px;
+       flex: 1 50%;
+   }
+
+   .contact p {
+       width: 70%;
+       margin: auto;
+   }
+
+   .small-nav {
+       display: none;
+   }
+
+   .med-nav {
+       display: inline-block;
+       padding: 0 10px;
+   }
+   .student-name {
+       margin: 0 auto 0 0;
+   }
+
+}
